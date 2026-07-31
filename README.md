@@ -122,7 +122,7 @@ LYTDesign is built step by step, and welcomes designers, developers, and thought
 
 ## 📝 License
 
-LYTDesign is an independent design initiative. Licensing details for individual products will be published as each one matures toward public release.
+Licensing information will be published individually for each project as it reaches public release.
 
 ---
 
