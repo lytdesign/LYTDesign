@@ -1,264 +1,146 @@
-# DESIGN.md — LYTDesign™ · LYTGrid™
+<div align="center">
 
-> The shared design language for every LYTDesign product.
-> Deep violet night, white type, one yellow highlighter. Calm software that respects attention.
+<img src="assets/banner.svg" alt="LYTDesign. Simplified. Human. Accessible. An independent product studio building human-first technology." width="100%" />
 
-Each product keeps its own `DESIGN.md` that **extends this file**. A product file may add components and override tokens. It may not break the rules in section 1.
+<br />
 
-**How to read this file.** Every value is tagged:
+[![Website](https://img.shields.io/badge/Website-lytdesign.com-FCD53F?style=for-the-badge&labelColor=160530)](https://www.lytdesign.com)
+![Independent Product Studio](https://img.shields.io/badge/Independent-Product%20Studio-26123E?style=for-the-badge&labelColor=160530)
+![Founded 2025](https://img.shields.io/badge/Founded-2025-26123E?style=for-the-badge&labelColor=160530)
+![Based in Norway](https://img.shields.io/badge/Based%20in-Norway-26123E?style=for-the-badge&labelColor=160530)
 
-- `[MEASURED]` — a pixel color sampled from the live lytdesign.com. Use exactly.
-- `[OBSERVED]` — read by eye from the live site (fonts, radii, sizes). Confirm against the site's CSS.
-- `[LOCKED]` — a decision already made. Do not change or "improve" it.
-- `[PROPOSED]` — a recommended value, contrast-checked.
-- `[TO DEFINE]` — not decided. **Do not invent a value. Ask.**
+[**About**](#about) &nbsp;·&nbsp; [**Foundation**](#foundation) &nbsp;·&nbsp; [**LYTGrid**](#lytgrid) &nbsp;·&nbsp; [**Products**](#products) &nbsp;·&nbsp; [**Contact**](#contact)
 
----
+</div>
 
-## 1. Visual Theme & Atmosphere
+<br />
 
-**One sentence:** a quiet violet night with a single yellow highlighter.
+> **"The world doesn't need more software.**
+> **It needs *softer software.*"**
+> &nbsp;&nbsp;&nbsp;&nbsp;*Built with heart. Not hype.*
 
-- **Mood:** calm, dignified, unhurried. Nothing competes with the content.
-- **Density:** low. One purpose per box. Generous space. `[LOCKED]`
-- **Character:** deep violet background, white titles, soft grey-lavender body text, and **one** yellow used to highlight: headlines, icons, quote bars, and the main call to action.
-- **Yellow is a highlighter, not a frame.** It does not draw card borders. Card borders are a faint white hairline. `[MEASURED]`
-- **Studio principles:** `[LOCKED]`
-  - **Simplified.** Start from what can be taken away.
-  - **Human.** Design for a real person in a real moment, not for engagement metrics.
-  - **Accessible.** A starting constraint, not a final pass.
-  - **Private.** No ads, no tracking, no data resale. Revenue comes from features, never from user data.
+<br />
 
-### LYTGrid rules `[LOCKED]`
+## About
 
-1. Every feature gets its own dedicated, visible box.
-2. Nothing is nested more than **one layer** deep.
-3. Important actions stay visible. No hidden menus, no tab mazes.
-4. Learn the pattern once, understand it everywhere.
-5. Clarity is never sacrificed for density.
-6. Design for how much a person can hold in mind, not for how much fits on a screen.
+I created LYTDesign from the belief that modern software has become increasingly complex, distracting, and data driven. Rather than building more technology for its own sake, I want to explore a calmer approach, one where thoughtful design, privacy, and simplicity help people accomplish more with less friction.
 
-**Never:** ads, tracking prompts, streaks, urgency, engagement bait, loud badges, playful bounce.
+<table>
+<tr>
+<td width="33%" valign="top">
 
----
+### Simplified
 
-## 2. Color Palette & Roles
+Most software adds. I try to remove. Every additional menu, every additional setting, every additional notification is a small tax on someone's attention. I start from the question of what can be taken away, not what can be added.
 
-### Surfaces
+</td>
+<td width="33%" valign="top">
 
-| Token | Value | Role |
-| --- | --- | --- |
-| `--lyt-bg-top` | `#200D39` `[MEASURED]` | Top of the page gradient |
-| `--lyt-bg-bottom` | `#160530` `[MEASURED]` | Bottom of the page gradient |
-| `--lyt-nav` | `#14062A` `[MEASURED]` | Navigation bar background |
-| `--lyt-card` | `#26123E` → `#1D0939` `[MEASURED]` | Box fill, subtle gradient left to right |
-| `--lyt-border` | `rgba(255,255,255,0.09)` ≈ `#34234C` `[MEASURED]` | 1px hairline on boxes and section dividers |
+### Human
 
-Page background = vertical gradient `--lyt-bg-top` → `--lyt-bg-bottom`.
+Technology is often built around engagement metrics, retention curves, and growth targets, treating the person using it as a source of data rather than someone to actually serve. I start from the opposite direction: what does a real person, in a real moment, actually need from this screen right now.
 
-### Text
+</td>
+<td width="33%" valign="top">
 
-| Token | Hex | Contrast on card | Role |
-| --- | --- | --- | --- |
-| `--lyt-text` | `#FFFFFF` `[MEASURED]` | 17.0 : 1 | Titles, nav links, emphasis |
-| `--lyt-text-muted` | `#968DA3` `[MEASURED]` | 5.4 : 1 | Body copy, descriptions |
+### Accessible
 
-### Yellow (the only accent)
+Accessibility is frequently treated as a compliance checklist, addressed near the end of a project once the "real" design is already finished. I treat it as a starting constraint, not a final pass, because software that only works well for some people is not actually simple, and it is not actually human centred either.
 
-| Token | Value | Role |
-| --- | --- | --- |
-| `--lyt-yellow` | `#FCD53F` `[MEASURED]` | Headlines, icons, quote bar, buttons. 11.9 : 1 on card |
-| `--lyt-on-yellow` | `#130428` `[MEASURED]` | Text on yellow buttons. 13.7 : 1 |
-| `--lyt-yellow-fill` | `rgba(252,213,63,0.125)` ≈ `#412B3E` `[MEASURED]` | Icon medallion fill |
-| `--lyt-yellow-ring` | `rgba(252,213,63,0.35)` `[MEASURED, approx]` | Icon medallion ring. Decorative only |
-| `--lyt-yellow-line` | `rgba(252,213,63,0.60)` ≈ `#A6873F` | Borders on **controls** (inputs). 5.0 : 1, so the control stays identifiable |
+</td>
+</tr>
+</table>
 
-### Status `[PROPOSED]`
+<details>
+<summary><b>Why calm software, privacy, and thoughtful interfaces matter</b></summary>
 
-| Token | Hex | Role |
-| --- | --- | --- |
-| `--lyt-success` | `#2EC4A0` | Confirmation |
-| `--lyt-danger` | `#FF8A8A` | Errors. Always paired with a text message |
+<br />
 
-### Rules
+**Calm software.** Constant notifications, infinite feeds, and attention driven design have made much of modern software exhausting to use, even when it works exactly as intended. Calm software is a deliberate rejection of that model: interfaces that inform without demanding, and that let a person finish what they came to do and then leave, rather than staying by design.
 
-- **No hardcoded colors in code.** Always a token. `[LOCKED]`
-- Yellow never appears as long body text. Use it for short highlights only.
-- The card hairline is decorative. Anything interactive (buttons, inputs) must be identifiable without it.
-- Never rely on color alone to carry meaning.
-- Extra themes (defined per product) must keep these token names and keep every text pairing at 4.5 : 1 or better.
+**Privacy is foundational, not a feature.** Once a product's business model depends on collecting and monetizing user data, every future design decision quietly bends toward extracting more of it. I avoid that dependency entirely, because privacy that can be turned off, sold, or renegotiated later was never really privacy to begin with.
 
----
+**Thoughtful interfaces.** An interface is not just a visual layer. It is the entire relationship between a person and a piece of software. I treat every interaction, not just the visual design, as something worth deliberately shaping.
 
-## 3. Typography Rules
+</details>
 
-| Role | Font | Notes |
-| --- | --- | --- |
-| Display / headlines | **Bebas Neue**, uppercase `[OBSERVED]` | White, with yellow for the emphasised words |
-| Body / UI (web) | **Inter** `[OBSERVED]` | Titles 600, body 400 |
-| Body / UI (Flutter apps) | Poppins `[LOCKED]` | The apps' existing theme font |
+<br />
 
-Web and Flutter apps currently use different body fonts. Whether to unify them is `[TO DEFINE]`.
+## Foundation
 
-### Scale `[PROPOSED]`
+This is not a feature list. It is closer to a set of commitments every LYTDesign product is expected to hold to.
 
-| Style | Font | Size | Line height |
-| --- | --- | --- | --- |
-| Display | Bebas Neue | 56 (40 on phones) | 1.05 |
-| Headline | Bebas Neue | 40 (32 on phones) | 1.1 |
-| Card title | Body font, 600 | 18 | 1.3 |
-| Body | Body font, 400 | 16 | 1.7 |
-| Label | Body font, 500 | 14 | 1.4 |
-| Caption | Body font, 400 | 12 | 1.4 |
+<img src="assets/foundation.svg" alt="Foundation: Human Centered. Simplicity and Elegance. Inclusive by Design. Thoughtful Interfaces. Privacy is Sacred: no ads, no tracking, no data resale, revenue comes from features, never from user data. Purpose Driven." width="100%" />
 
-- The site's body copy is airy (line height about 1.7). Keep it.
-- In the Flutter apps, sizes go through `scaledFontSize` and content width through `maxContentWidth`. `[LOCKED]`
-- Body never below 16 on phones. Respect the system font-size setting.
+<br />
 
----
+## LYTGrid
 
-## 4. Component Stylings
+**LYTGrid™** is my design system, and the shared language behind every product I create. It is best understood as four related things at once:
 
-### LYTGrid Box (the core component)
+| | |
+| :--- | :--- |
+| **A design philosophy**<br />Clarity should never be sacrificed for density, and a person should never need to search for something that should simply be visible. | **A layout philosophy**<br />Every feature receives its own dedicated, visible space, structured as a grid of purposeful boxes rather than menus, tabs, or deeply nested navigation. |
+| **A cognitive UI system**<br />The structure is designed around how much a person can reasonably hold in mind while using software, not around how many features can be crammed onto a single screen. | **A shared language across products**<br />LYTGrid is not tied to a single app. It is the interface language every current and future LYTDesign product is expected to build on. |
 
-- Fill `--lyt-card` gradient, 1px `--lyt-border`, radius about 16 `[OBSERVED]`.
-- Padding about 22–24. One purpose per box.
-- Content order: icon medallion, bold white title, muted description.
-- No shadow. Hover: border brightens to `rgba(252,213,63,0.35)` `[PROPOSED]`.
+Nothing is hidden, nothing is nested more than one layer deep, and important actions remain visible rather than buried in deep navigation. Learning the interaction pattern once means understanding it everywhere across LYTDesign's products.
 
-### Icon medallion
+LYTGrid's most developed implementation today lives inside QuraLYT, refined through real, day to day use.
 
-- 52 px circle, fill `--lyt-yellow-fill`, 1px ring `--lyt-yellow-ring`, glyph in `--lyt-yellow`. `[OBSERVED]`
-- One line-style icon per box. Decorative, so mark it hidden from screen readers.
+<br />
 
-### Quote block
+## Products
 
-- 3 px `--lyt-yellow` bar on the left, Bebas Neue uppercase white text, emphasised words in yellow. `[MEASURED bar]`
+Rather than building isolated applications, I am building a connected ecosystem of products that share one design language, one philosophy, and one commitment to thoughtful software.
 
-### Navigation bar
+<img src="assets/products.svg" alt="QuraLYT: an ad-free, accessibility-focused Quran reading and reflection experience, in active development. TrackLYT: a local first progress tracking platform designed around clarity, privacy and reliable digital workflow management." width="100%" />
 
-- Background `--lyt-nav`, hairline `--lyt-border` beneath, logo mark plus wordmark left, white links right.
-- The single call to action ("Contact Us") is a yellow button. `[OBSERVED]`
+<div align="center">
 
-### Buttons
+[**QuraLYT documentation →**](https://github.com/lytdesign/Quralyt) &nbsp;·&nbsp; [**Explore the ecosystem →**](https://www.lytdesign.com/ecosystems.html)
 
-| Type | Style |
-| --- | --- |
-| Primary | Fill `--lyt-yellow`, text `--lyt-on-yellow`, radius about 10, min height 46–48 |
-| Secondary | 1.5px `--lyt-yellow` outline, yellow text, transparent fill `[PROPOSED]` |
-| Text | Yellow text, no border, 48 px touch target `[PROPOSED]` |
+</div>
 
-Focus: 2px white ring, offset 2. Always visible.
-Button sizes only ever grow as the layout grows. They never shrink at a larger tier. `[LOCKED]`
+Future products will be added here as they reach a stage worth sharing publicly, each built on the same foundation and the same design system.
 
-### List boxes `[LOCKED]`
+<br />
 
-For pages showing a repeating scrollable list of cards, boxes **auto-grow to fit their content**. Never force an item count. Single-layout pages (settings, about, contact) do not use this rule.
+## A Personal Note
 
-### Settings row `[PROPOSED]`
+> LYTDesign is an independent product studio, founded in 2025, built by one person rather than a company or a team. I didn't start LYTDesign to build QuraLYT, or TrackLYT, or any single product. I started it because I kept encountering software that felt like it was working against the people using it, and I wanted to find out what it would look like to build the opposite.
+>
+> I am not asking the world to download what I build. I am asking people to build with me, because the world does not need more software. It needs softer software.
+>
+> **S.M.** · Founder, LYTDesign™
 
-- Full-width Box, label left, control right, min height 56, one control per row.
+<br />
 
-### Inputs `[PROPOSED]`
+## Contact
 
-- Fill `--lyt-bg-bottom`, 1px `--lyt-yellow-line` border, radius 12, min height 48.
-- Focus: border `--lyt-yellow` plus the focus ring. Error: `--lyt-danger` border and a text message.
+I build LYTDesign step by step, and I welcome designers, developers, and thoughtful feedback that share these values.
 
-Product-specific components live in the product's own `DESIGN.md`.
+| | |
+| :--- | :--- |
+| **Designers and developers** | People who care about thoughtful, inclusive technology |
+| **Creative collaborators** | Organizations interested in accessible technology and public impact |
+| **Supporters and believers** | Encouragement and ideas that help this vision move forward |
 
----
+<div align="center">
 
-## 5. Layout Principles
+[**www.lytdesign.com**](https://www.lytdesign.com) &nbsp;·&nbsp; [**info@lytdesign.com**](mailto:info@lytdesign.com)
 
-- **Spacing scale (px):** 4, 8, 12, 16, 24, 32, 48, 64 `[PROPOSED]`
-- **Cards:** two columns beside the text on desktop, three across for feature grids, one column on phones `[OBSERVED]`
-- **Whitespace:** more than feels necessary.
-- **Voice in copy:** first person "I", never "we" or "us". `[LOCKED]`
-- **Tone:** plain, warm, direct. No jargon, no hype, no guilt.
+</div>
 
----
+<br />
 
-## 6. Depth & Elevation
+## License
 
-Depth comes from **a slightly lighter fill and a hairline**, not shadows.
+Licensing information will be published individually for each project as it reaches public release.
 
-| Level | Treatment |
-| --- | --- |
-| 0 — canvas | Gradient background |
-| 1 — nav | `--lyt-nav` + hairline beneath |
-| 2 — box | `--lyt-card` + `--lyt-border` |
-| 3 — hover | Border `rgba(252,213,63,0.35)` |
-| Modal | Scrim `rgba(19,4,40,0.72)`, dialog at level 2 |
+<br />
 
----
+<div align="center">
 
-## 7. Do's and Don'ts
+<sub>Independent product studio · Founded 2025 · Norway</sub>
 
-**Do**
-- Use tokens for every color, size, and spacing value.
-- Give every feature its own visible box.
-- Keep one primary action per screen, in yellow.
-- Test on a real device at narrow widths before calling anything done.
-- Change one variable at a time, then compare against a saved baseline.
-
-**Don't**
-- Don't draw card borders in yellow. Borders are the white hairline.
-- Don't use yellow for body paragraphs.
-- Don't hide features in menus, drawers, or nested tabs.
-- Don't add ads, trackers, streaks, badges, or urgency.
-- Don't claim compliance (for example WCAG) that hasn't been independently audited.
-- Don't add a dependency, database, or architecture without stopping to ask.
-- Don't animate with bounce, shake, or spin.
-
-**Motion:** 150–250 ms, ease-out, fades and gentle slides only. Honor "reduce motion". `[PROPOSED]`
-
----
-
-## 8. Responsive Behavior
-
-| Tier | Breakpoint `[LOCKED for Flutter apps]` |
-| --- | --- |
-| Mobile | up to 500 dp |
-| Tablet | up to 840 dp |
-| Tablet landscape | up to 1200 dp |
-| Desktop | 1200 dp and above |
-
-- Breakpoints use **logical width**, not physical pixels.
-- Web breakpoints for lytdesign.com are `[TO DEFINE]` until read from the site's CSS.
-- Touch targets: minimum 48 × 48.
-- Layouts reflow by stacking or widening boxes, never by hiding features.
-
----
-
-## 9. Agent Prompt Guide
-
-### Quick reference
-
-```
-Page gradient:   #200D39 → #160530      Nav: #14062A
-Box:             #26123E → #1D0939      Hairline: rgba(255,255,255,.09)
-Text:            #FFFFFF                Muted: #968DA3
-Yellow:          #FCD53F                Text on yellow: #130428
-Medallion:       fill rgba(252,213,63,.125) · ring rgba(252,213,63,.35)
-Display font:    Bebas Neue, uppercase  Body: Inter
-Radius:          box 16 · button 10 · input 12
-```
-
-### Ready-to-use prompts
-
-- *"Build this section with LYTGrid: one box per feature, an icon medallion, a bold white title and muted description. Hairline border, never yellow. Yellow only for headlines, icons and the one main button."*
-- *"Write the headline in Bebas Neue uppercase, white, with the key words in yellow."*
-- *"Read this file, then the product's own DESIGN.md. The product file wins for that product, except for section 1."*
-
-### Before finishing any UI task, confirm
-
-1. Tokens only; no hardcoded colors or sizes.
-2. Every text pairing meets 4.5 : 1 (3 : 1 for large text).
-3. Box borders are the white hairline, not yellow.
-4. Works at 360 and 412 wide, and at larger text sizes.
-5. Anything marked `[TO DEFINE]` was asked about, not guessed.
-6. Nothing added that tracks, advertises to, or pressures the person using it.
-
----
-
-*LYTDesign™ · Independent product studio · Norway*
+</div>
