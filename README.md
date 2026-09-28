@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="LYTDesign. Simplified. Human. Accessible. An independent product studio building human-first technology." width="100%" />
+<img src="assets/banner.svg" alt="LYTDesign. Design that feels human by design. Simplified. Human. Accessible. An independent product studio creating calm, accessible, human first digital products." width="100%" />
 
 <br />
 
